@@ -1,0 +1,94 @@
+{
+	"info": {
+		"_postman_id": "722e4806-1ac8-49fe-83b0-1447259da18a",
+		"name": "RobotForLoadApi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "RobotForLoad/FindBest",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"loadId\": \"123\",\r\n    \"x\": 12,\r\n    \"y\": 23\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:58224/RobotForLoad/FindBest",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "58224",
+					"path": [
+						"RobotForLoad",
+						"FindBest"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Success",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"loadId\": \"123\",\r\n    \"x\": 12,\r\n    \"y\": 23\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:58224/RobotForLoad/FindBest",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "58224",
+							"path": [
+								"RobotForLoad",
+								"FindBest"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Server",
+							"value": "Microsoft-IIS/10.0"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "ASP.NET"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 06 Aug 2021 03:41:39 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"robotId\": \"34\",\n    \"distanceToGoal\": 5.656854249492381,\n    \"batteryLevel\": 92\n}"
+				}
+			]
+		}
+	]
+}
